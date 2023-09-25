@@ -145,7 +145,7 @@ const UserRooms = () => {
                             });
                           }
 
-                        }} // Open the modal when a box is clicked
+                        }} 
                       >
 
                         <i className={`fa-solid fa-couch room-icon ${box.is_alloted ? 'icon-alloted' : ''}`}></i> <br />

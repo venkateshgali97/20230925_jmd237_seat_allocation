@@ -18,7 +18,7 @@ function Users() {
         setAddUserModalOpen((prevIsOpen) => !prevIsOpen);
     };
 
-    const getAllUsers = async() => {
+    const getAllUsers = async () => {
         const response = await UserApis.getAllUsers()
         console.log(response, "this is all users")
         setTotalUsers(response.data)
@@ -68,24 +68,24 @@ function Users() {
     console.log(filteredUsers)
     return (
         <div>
-            <div className='container mt-4'>
+            <div className='container-fluid mt-4'>
                 <div className='row'>
                     <div className='col-sm-3'>
-                        <input type='search' placeholder='Enter User Name' onChange={filterHandler}/>
+                        <input type='search' placeholder='Enter User Name' onChange={filterHandler} />
                     </div>
-                    <div className='col-lg-6'>
-                           <button className='add-user-button px-5' onClick={() => setAddUserModalOpen(true)}>Add User</button>
+                    <div className='col-sm-3'>
+                        <button className='add-user-button px-5' onClick={() => setAddUserModalOpen(true)}>Add User</button>
                     </div>
                 </div>
             </div>
-            
+
             <br />
 
             <table className='admin-table'>
                 <tr>
                     <th>Name </th>
-                    <th>Email</th>
                     <th>Designation</th>
+                    <th>Email</th>
                     <th>Contact</th>
                     <th>Room Name</th>
                     <th>Room Number</th>

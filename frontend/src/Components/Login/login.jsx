@@ -25,6 +25,7 @@ const Login = () => {
     else {
       const response = await loginApi.login(logInDetails)
       console.log(response, "this is login Response service")
+      localStorage.setItem("jwt", response.data.jwt)
       if (response.status === 202) {
         toast.error("Email Not found")
       }
