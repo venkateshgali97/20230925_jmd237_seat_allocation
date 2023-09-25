@@ -86,8 +86,8 @@ const UserRooms = () => {
             <table>
               <tr>
                 <th>Name </th>
-                <th>Email</th>
                 <th>Designation</th>
+                <th>Email</th>
                 <th>Contact</th>
                 <th>Room Name</th>
                 <th>Room Number</th>

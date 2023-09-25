@@ -20,8 +20,6 @@ const AdminDashboard = () => {
               <li>
                 <Link to="users">Users</Link>
               </li>
-
-
             </ul>
             <div onClick={() =>navigate("/")}>
                <hr />
@@ -29,25 +27,18 @@ const AdminDashboard = () => {
               <span className='mx-2'>Log out</span>
             </div>
           </nav>
-
         </div>
 
         <div className="main-content">
-
           <Routes>
             <Route path="rooms" element={<Rooms />}></Route>
             <Route path="users" element={<Users />}></Route>
-
-
-
           </Routes>
         </div>
       </div>
 
     </>
   );
-
-
 }
 
 

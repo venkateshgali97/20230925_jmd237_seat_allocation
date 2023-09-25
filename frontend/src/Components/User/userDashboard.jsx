@@ -25,6 +25,7 @@ let navigate  = useNavigate()
               <div  onClick={() => {
               localStorage.removeItem("email")
               localStorage.removeItem("name")
+              localStorage.removeItem("jwt")
               navigate("/")
             }}>
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
